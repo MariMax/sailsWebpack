@@ -1,0 +1,38 @@
+//Language Menu Modal
+#lang_menu.modal.fade.modal-custom
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+        h4.modal-title ModalTitle
+      .modal-body
+        ul
+          li
+            a(href='#' data-dismiss='modal') English
+          li
+            a(href='#' data-dismiss='modal') Deutsch
+          li
+            a(href='#' data-dismiss='modal') 日本の
+          li
+            a(href='#' data-dismiss='modal') 한국어
+          li
+            a(href='#' data-dismiss='modal') Русский
+          li
+            a(href='#' data-dismiss='modal') 中国的
+
+
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+
+    ul.nav.navbar-nav
+        li
+          a(href='/') firstPage
+        li
+          a(href='/secondPage') secondPage
+        li
+          a(href='/thirdPage') thirdPage
+
+    p.navbar-text.navbar-right
+      | Language
+      | &nbsp;
+      a(data-toggle='modal', data-target='#lang_menu', href='#') please choose one

@@ -1,0 +1,14 @@
+extends ./layout/layout
+
+block pageRelatedHeaderData
+  title FirstPage
+
+
+block content
+ | Hi I am first page with additional script
+
+ .timer
+ .touch
+
+block pageRelatedScripts
+  script(src='/webpack/firstPage.js')
